@@ -13,6 +13,11 @@ service FreteZupService {
   rpc calculaFrete (FreteRequest) returns (FreteResponse){}
 }
 
+message ErroDetails{
+  int32 code = 1;
+  string message = 2;
+}
+
 message FreteRequest{
   string cep = 1;
 }
